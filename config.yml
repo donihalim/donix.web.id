@@ -1,0 +1,31 @@
+baseURL: /
+languageCode: en-us
+title: DØNIX
+
+disableKinds:
+  - taxonomy
+  - term
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  author: Doni Halim
+  description: DØNIX personal website.
+
+menu:
+  main:
+    - name: home
+      url: "/"
+      weight: 1
+
+    - name: about
+      url: "/about"
+      weight: 2
+
+    - name: "@donihalim"
+      url: "https://twitter.com/dsnvhalm"
+      weight: 3

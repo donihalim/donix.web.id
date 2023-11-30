@@ -1,0 +1,5 @@
+.hugo_build.lock
+build.sh
+resources/
+public/
+static/sources
