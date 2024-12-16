@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div id="header">
-    <h1 class="title">Articles</h1>
+    <h1 class="title">Doni Halim's Blog</h1>
 </div>
 <ul>
     {{ range ( where .Site.RegularPages "Type" "post" ) }}
@@ -10,11 +10,6 @@
     </li>
     {{ end }}
 </ul>
-<p>Read my articles on your favorite <a href="/index.xml">rss</a> reader.</p>
-{{ if fileExists "/static/sources/donix.tar.gz" }}
-{{ $f := os.Stat "/static/sources/donix.tar.gz" }}
-<p>The source code of this site is available as <a href="/sources/donix.tar.gz">tarball</a> (size: {{ div $f.Size 1024}}KB)</p>
-{{ end }}
-{{ $lastup := os.Stat "content" }}
-<p>Last Updated: {{ $lastup.ModTime }}</p>
+{{ $lastup := os.Stat "." }}
+<p>Last Updated: {{ $lastup.ModTime | time.Format "Mon 02 Jan 2006 03:04:05 PM MST" }}</p>
 {{ end }}

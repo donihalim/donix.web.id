@@ -12,7 +12,7 @@
         <meta property="og:url" content="{{ .Permalink }}" />
         <link rel="icon" type="image/png" href="{{ "/img/icon.png" | absURL }}">
         <link rel="stylesheet" type="text/css" href="{{ "/css/style.css" | absURL }}">
-        <title>{{ .Title }}</title>
+	<title>{{ .Title }}</title>
     </head>
     <body>
         <div id="navbar">
@@ -23,7 +23,7 @@
         </div>
         {{ block "main" . }} {{ end }}
         <hr>
-        <p>All content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>.</p>
-        <p>go back to the <a href="{{ .Site.BaseURL }}">home page</a>.</p>
+	<p>To discuss this with the author, send me an <a href="mailto:donihaalim+blog@gmail.com?subject={{ .Permalink }}">email</a></p>
+        <p>Or go back to the <a href="{{ .Site.BaseURL }}">home page</a></p>
     </body>
 </html>

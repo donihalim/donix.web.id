@@ -1,6 +1,6 @@
 baseURL: /
 languageCode: en-us
-title: DØNIX
+title: Doni Halim's Blog
 
 disableKinds:
   - taxonomy
@@ -14,18 +14,18 @@ markup:
 
 params:
   author: Doni Halim
-  description: DØNIX personal website.
+  description: Consider this as my online identity.
 
 menu:
   main:
-    - name: home
+    - name: Home
       url: "/"
       weight: 1
 
-    - name: about
+    - name: About
       url: "/about"
       weight: 2
 
-    - name: "@donihalim"
-      url: "https://twitter.com/dsnvhalm"
+    - name: Feed
+      url: "/index.xml"
       weight: 3
